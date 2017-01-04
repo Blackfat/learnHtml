@@ -18,17 +18,17 @@
 ###  margin叠加、嵌套
 
 1.  当两个元素为兄弟关系的时候：一个有下边距，一个有上边距，那么这两个间距中，较大的保留，较小的消失
-2.  对内部原色的原色设置margin-top时，内部对于外部的元素并没有产生一个margin值，而是外部元素相对于上面的元素产生了一个margin值
+2.  对内部元素设置margin-top时，内部对于外部的元素并没有产生一个margin值，而是外部元素相对于上面的元素产生了一个margin值
 
 ###  图片下间距
 
 1.  在任何情况下，图片下面都会有三个像素的间距
 
-2. 解决方法：
+2.  解决方法：
 
-   ```css
-   display:block || vertical-align: top/middle/bottom;
-   ```
+    ```css
+    display:block || vertical-align: top/middle/bottom;
+    ```
 
  ### inline-block
 
@@ -41,5 +41,22 @@
     *zoom:1;
    ```
 
-   ​
+### 浮动
 
+1. ie6同方向的浮动+margin会产生双边距
+
+2. 解决方法：
+
+   ```css
+    *display:inline;
+   ```
+
+3. ie6下li里面有元素是浮动的话，li就会产生莫名的下边距
+
+4. 解决办法：
+
+   ```css
+   vertical-align: top/middle/bottom
+   ```
+
+   ​
