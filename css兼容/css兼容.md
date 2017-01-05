@@ -59,4 +59,57 @@
    vertical-align: top/middle/bottom
    ```
 
-   ​
+### input问题
+
+1.    在ie8下，光标上下不居中
+
+      line-height:height;
+
+2.    在ie高版本下的特殊展示问题
+
+         -ms-clear   -ms-reveal
+
+3.    在ie6下，背景脱离
+
+         把背景加给父级元素，包裹一个input
+
+4.    在ie6中，padding会无效的问题
+
+         把背景加给父级元素，包裹一个input
+
+###   css hack
+
+
+   1. _针对ie6
+   2. ＊针对ie7
+   3. \0针对ie8以上（包含8，9，10）
+   4. \9针对ie6-ie10
+
+
+   ###   条件注释语句
+
+1. <--[if IE6]--> <![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

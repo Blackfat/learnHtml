@@ -24,24 +24,17 @@
         
         .abc{
             height: 35px;
-            width: 280px;
+            width: 300px;
+/*            border: 1px solid red;*/
             line-height: 35px;
             background:url(image/reg_bg.jpg) left top no-repeat; 
-            padding: 0 10px;
-        }
-        
-        .abc input{
-            width:100%;
-            height:35px;
-            line-height: 35px;
+/*        解决ie6下*/
+            _background-attachment: fixed;
         }
     
     </style>
 </head>
 <body>
-    
-     <div class="abc">
-         <input />         
-     </div>
+     <input type="text" class="abc"/>
 </body>
 </html>
