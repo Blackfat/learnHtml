@@ -3,7 +3,9 @@
 ### 如何定位错误
 
 1. css单词拼错了;css值赋值错了
+
 2. 通过背景颜：如果有颜色，代表物体是有样式的
+
 3. 通过代码颜色
 
 ###  元素高度为0
@@ -18,6 +20,7 @@
 ###  margin叠加、嵌套
 
 1.  当两个元素为兄弟关系的时候：一个有下边距，一个有上边距，那么这两个间距中，较大的保留，较小的消失
+
 2.  对内部元素设置margin-top时，内部对于外部的元素并没有产生一个margin值，而是外部元素相对于上面的元素产生了一个margin值
 
 ###  图片下间距
@@ -27,10 +30,10 @@
 2.  解决方法：
 
     ```css
-    display:block || vertical-align: top/middle/bottom;
+       display:block || vertical-align: top/middle/bottom;
     ```
 
- ### inline-block
+### inline-block
 
 1. inline-block在ie6和ie7下无效
 
@@ -63,7 +66,7 @@
 
 1. 在ie8下，光标上下不居中
 
-line-height:height;
+   line-height:height;
 
 2. 在ie高版本下的特殊展示问题
 
@@ -77,24 +80,21 @@ line-height:height;
 
    把背景加给父级元素，包裹一个input
 
-###   css hack
+### css hack
+
+1. _针对ie6
+
+2. ＊针对ie7
+
+3. \0针对ie8以上（包含8，9，10）
+
+4. \9针对ie6-ie10
 
 
-   1. _针对ie6
-   2. ＊针对ie7
-   3. \0针对ie8以上（包含8，9，10）
-   4. \9针对ie6-ie10
 
-
-   ###   条件注释语句
+### 条件注释语句
 
 1. <--[if IE6]--> <![endif]-->
-
-
-
-
-
-
 
 
 
