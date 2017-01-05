@@ -61,21 +61,21 @@
 
 ### input问题
 
-1.    在ie8下，光标上下不居中
+1. 在ie8下，光标上下不居中
 
-      line-height:height;
+line-height:height;
 
-2.    在ie高版本下的特殊展示问题
+2. 在ie高版本下的特殊展示问题
 
-         -ms-clear   -ms-reveal
+   -ms-clear   -ms-reveal
 
-3.    在ie6下，背景脱离
+3. 在ie6下，背景脱离
 
-         把背景加给父级元素，包裹一个input
+   把背景加给父级元素，包裹一个input
 
-4.    在ie6中，padding会无效的问题
+4. 在ie6中，padding会无效的问题
 
-         把背景加给父级元素，包裹一个input
+   把背景加给父级元素，包裹一个input
 
 ###   css hack
 
