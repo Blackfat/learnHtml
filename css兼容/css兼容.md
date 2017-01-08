@@ -30,7 +30,7 @@
 2.  解决方法：
 
     ```css
-       display:block || vertical-align: top/middle/bottom;
+        display:block || vertical-align: top/middle/bottom;
     ```
 
 ### inline-block
@@ -96,8 +96,18 @@
 
 1. <--[if IE6]--> <![endif]-->
 
+   ​
 
 
+### vertical-align
+
+1. 只有inline或者inline-block元素才可以使用
+
+
+2. 不能有任何的其它状态（float、positon:absolute、fixed）
+3. 对齐规则：
+   1. 默认以基线对齐：两个都有内容，以文字下的基线对齐；有一个没有内容，没有内容的元素的底部会对齐到有元素内容的基线。
+   2. 使用vertical-align对齐：两个元素对齐时，两个元素会互相参考；多个元素对齐时，使用一个元素作为参考线对齐
 
 
 
