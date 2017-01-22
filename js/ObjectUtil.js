@@ -34,3 +34,23 @@ function type(value){
     }
 });
 
+
+/*
+1.确保拷贝后的对象，与原对象具有同样的prototype原型对象
+2.确保拷贝后的对象，与原对象具有同样的属性
+*/
+function copyObject(orig){
+    var copy = Object.create(Object.getPrototypeOf(orig));
+    copyOwnPropertiesFrom(copy,orig);
+    return copy;
+}
+
+function copyOwnPropertiesFrom(target, source){
+    Object.getOwnPropertyNames(source).forEach(
+    function(propKey){
+        var desc = Object.getOwnPropertyDescriptor(source, propKey);
+        Object.defineProperty(target,propKey,desc);
+    }
+    );
+}
+
